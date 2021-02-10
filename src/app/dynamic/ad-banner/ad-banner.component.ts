@@ -9,9 +9,10 @@ import { AdComponent } from 'src/app/model/ad.component';
   styleUrls: ['./ad-banner.component.css']
 })
 export class AdBannerComponent implements OnInit {
-  @Input() ads: AdItem[];
+  @Input() ads: AdItem[]=[];
   currentAdIndex = -1;
-  @ViewChild(AdDirective, {static: true}) adHost: AdDirective;
+  @ViewChild(AdDirective, { static: true })
+  adHost!: AdDirective;
   interval: any;
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

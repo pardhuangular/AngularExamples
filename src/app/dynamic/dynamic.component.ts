@@ -8,7 +8,7 @@ import { AdService } from '../service/ad.service';
   styleUrls: ['./dynamic.component.css']
 })
 export class DynamicComponent implements OnInit {
-  ads: AdItem[];
+  ads: AdItem[]=[];
   constructor(private adService: AdService) { }
 
   ngOnInit() {
